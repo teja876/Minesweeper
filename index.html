@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="center">
+    <div class="beforeStart">
+      <h1>Minesweeper</h1>
+      <div class="instructions">
+        <h3>Instructions</h3>
+        <ul>
+          <li>Game contains hidden mines in random cells.</li>
+          <li>Game contains 9 * 9 dimensions and 10 mines</li>
+          <li>You are provided with only 10 flags to mark any cell as bomb</li>
+          <li>
+            left click on any cell to reveal the no of mines on its neibours.
+            right click on any cell to mark it as Flag
+          </li>
+          <li>If you click on any cell which contains mines they you lose</li>
+          <li>Reveal all the cell without clicking any mines.</li>
+          <li>
+            To make the game easy for you we reveal all the cells which does not
+            contain any neighbour mines if you click on such cells.
+          </li>
+        </ul>
+      </div>
+      <div><button id="startGame">Start game</button></div>
+    </div>
+    <div class="game center hide">
+      <div id="score">Score: 0</div>
+      <div id="flags">Flags left: 10</div>
+      <div class="board"></div>
+      <div id="result"></div>
+      <button id="reset">Reset Game</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
